@@ -12,8 +12,14 @@
     <link href="./dist/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
     <link href="product.css" rel="stylesheet">
     <link href="./dist/fontawesome-free-6.0.0-web/css/all.min.css" rel="stylesheet" >
-    <link rel="canonical" href="https://fonts.google.com/specimen/Fredoka+One"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+   
     <style>
+       body {
+        font: 700 1.375rem/1.75rem "Open Sans", sans-serif;
+    letter-spacing: -0.1px;
+    }
+    /*
       body{
         font-family: "Fredoka One script=latin rev=1";
     font-weight: 400;
@@ -21,6 +27,7 @@
     line-height: initial;
 
       }
+      */
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -66,7 +73,9 @@
 {
 color: #0a58ca;
 }
-
+.site-header{
+  color: gray;
+}
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -78,7 +87,7 @@ color: #0a58ca;
             transform: translateX(-80%);
         }
         .Schedule{
-            width: 700px;
+            width: 850px;
           
             position: absolute;
             transform: translate(10%, 50%);
@@ -89,6 +98,7 @@ color: #0a58ca;
             flex-wrap: nowrap;
             padding: 0 5%;
             margin: 0;
+          
         }
         @media (max-width: 767px) {
             .Schedule{
@@ -102,8 +112,21 @@ color: #0a58ca;
         }
         .Schedule div{
           width: 210px;
-    min-width: 150px;
+    min-width: 180px;
     justify-content: center;
+        }
+        .btnHoax{
+          box-shadow: 1px 10px 15px rgb(0 0 0 / 58%) !important;
+          color: #fdfdfd !important;
+          background-color: #3858d6 !important;
+        }
+        .iconoSchedule {
+          color: #3858d6  !important;
+        }
+        .iconoAmarillo {
+          color: #fdc836 !important;
+    background-color: beige;
+    padding: 7px;
         }
         
     </style>
@@ -124,12 +147,12 @@ color: #0a58ca;
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
         -->
     </a> 
-    <a class="py-2 d-none d-md-inline-block text-decoration-none text-dark" href="#">Database</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none text-dark" href="#">Edication</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none text-dark" href="#">News</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none text-dark" href="#">Regulation</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none text-dark" href="#">Support</a>
-    <a type="button" class="btn btn-primary px-4 me-sm-3 fw-bold py-2 d-none d-md-inline-block  ">Hoax Buster</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Database</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Edication</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">News</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Regulation</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Support</a>
+    <a type="button" class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold py-2 d-none d-md-inline-block btnHoax ">Hoax Buster</a>
   </nav>
 </header>
 
@@ -143,14 +166,13 @@ color: #0a58ca;
     <div class="col-md-5 p-lg-5 mx-auto my-5 section1">
       <h1 class="display-5 fw-bold titulo1">Fisht Virus With Vaccines</h1>
       <br>
-      <p class="lead fw-normal">Let´s stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+      <p class=" fw-normal">Let´s stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
       <br>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      <p class="row fw-normal lead"> <span class="col-12 col-md-6"><i class="fa-solid fa-shield iconoAmarillo"></i> Best protection</span> <span class="col-12 col-md-6" ><i class="fa-solid fa-star iconoAmarillo"></i> Selected Vaccines</span></p>
+   <br><br><br>
       <br>
-      <br>
-      <br>
-      <h5 class="">Schedule yout vaccinations</h5>
-      <div class="Schedule d-flex align-items-stretch p-3 rounded-3 shadow-lg cristal"  id="dropdownMega">
+      <h5 class=""> <i class="fa-solid fa-clock iconoSchedule"></i> Schedule yout vaccinations</h5>
+      <div class="Schedule d-flex align-items-stretch p-3 rounded-3 shadow-lg cristal"  id="">
         <nav class="d-flex flex-wrap">
             <div class="col d-flex align-items-center">
                 <img class="bi text-muted flex-shrink-0 me-3" width="25px" height="25px" src="./dist/img/location-pin-solid.svg" alt="">
@@ -184,7 +206,7 @@ color: #0a58ca;
                 
                 
                 <div class="d-flex">
-                  <button class="btn btn-primary">Agendar</button>
+                  <button class="btn btn-primary btn-lg btnHoax">Submit</button>
                 </div>
               </div>
 
