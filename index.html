@@ -69,29 +69,185 @@
     
     z-index: -1;
 }
-.titulo1
+.titulos
 {
-color: #0a58ca;
+color: #0d3269;
+font-size: 2.5rem;
+font-weight: 700 ;
 }
+.textoMediano{
+  font-size: 1.2rem
+}
+.textoChico{
+  font-size: .9rem;
+  line-height:15px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/*
 .site-header{
   color: gray;
 }
+*/
+.accordion{
+  display: flex;
+  flex-direction: column;
+    flex-grow: 1;
+}
+#acordion2{
+  padding-top: 1rem;
+}
+.accordion i{
+  background-color: #256bd423;
+  padding: 8px;
+  border-radius: 3px;
+  color : #0d3269;
+  margin-right: 1rem;
+
+}
+.accordion button{
+  color : #0d3269;
+  font-weight: 600;
+}
+.accordion-button::after {
+  background-color: #256bd423;
+  padding: 0px;
+  border-radius: 3px;
+}
+
+.encabezadoSitio{
+  top: 0;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 0.;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+}
+.encabezadoSitio a{
+  color: dimgray;
+}
+.card-imagen{
+  color: #0a58ca;
+    padding: 1rem;
+    font-size: 3rem;
+}
+.card-imagen i{
+  background-color: #256bd423;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.tarjetaContact .card-imagen i{
+  background-color: #256bd423;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 45px !important;
+  width: 45px !important;
+  color: #0a58ca;
+  padding: 10px;
+    font-size: 1.2rem;
+}
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+    
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+.Seccion1,.Seccion3{
+          height: 94vh;
+        }
+        
+        .espacioTarjetas{
+          justify-content: space-evenly;
+        }
+        .Seccion3{
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        
+    .seccion3Tarjetas{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      padding:0 20px;
+      text-align: left;
+    }
+    .seccion3TarjetasBtn{
+      display: flex;
+      
+      align-items: center;
+    }
+
+      @media (min-width: 1440px){
+        .Schedule{
+            width: 1000px !important;
+           
+        }
+      }
+      /*
+      @media (max-width: 768px) {
+            .Schedule{
+                width: 750px ;
+                position: relative;
+                flex-wrap: wrap;
+            }
+            
+        }
+        */
       @media (min-width: 768px) {
+        nav{
+      height: 12vh;
+      }
+      .menu{
+        padding-right: 5rem;
+        font-size: 18px;
+      }
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        
         .section1{
             text-align: left;
             height: 70vh;
             width: 35%;
-            transform: translateX(-80%);
+            transform: translate(-80%,10%);
         }
+        .section2{
+            text-align: left;
+            
+            width: 45%;
+            transform: translateX(-50%);
+        }
+        .scheduleVacuna{
+  position: absolute;
+    bottom: -8vh;
+}
         .Schedule{
             width: 850px;
-            position: absolute;
-            transform: translate(10%, 20%);
+            justify-content: space-evenly;
+           
         }
       }
+      /*
         .site-header{
             display: flex;
             flex-wrap: nowrap;
@@ -99,25 +255,34 @@ color: #0a58ca;
             margin: 0;
           
         }
-        @media (max-width: 767px) {
-            .Schedule{
-                width: 100%;
-                position: relative;
-                flex-wrap: wrap;
-            }
-        }
+        */
+        
         .cristal{
-            background: #ffffff9e;
+            background: #ffffffd9 !important;
+            ackdrop-filter: saturate(180%) blur(4px) !important;
         }
         .Schedule div{
-          width: 210px;
-          min-width: 180px;
+          width: 250px;
+          min-width: 200px;
           justify-content: center;
         }
         .btnHoax{
           box-shadow: 1px 10px 15px rgb(0 0 0 / 58%) !important;
           color: #fdfdfd !important;
           background-color: #3858d6 !important;
+        }
+        .btnTarjetas{
+        background-color: #256bd423 ;
+        padding: 10px 35px;
+        border: none;
+        color: #0d3269;
+        font-weight: 700;
+        width: 100%;
+      
+        }
+        .btnTarjetas:hover{
+          color: white;
+          background-color: #0a58ca;
         }
         .iconoSchedule {
           color: #3858d6  !important;
@@ -134,6 +299,7 @@ color: #0a58ca;
     .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
+    
 }
 
 .carousel-inner .carousel-item.active,
@@ -160,6 +326,66 @@ color: #0a58ca;
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
 }
+
+.tarjetaBenefits{
+  max-width: 290px;
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin: 1rem;
+    box-shadow: 1px 10px 15px rgb(0 0 0 / 24%) !important
+}
+.tarjetaBenefits:hover{
+  box-shadow: 1px -1px 20px 1px #0a58ca !important
+}
+.tarjetaBenefits p{
+ font-size: 1rem; 
+ line-height: 20px;
+}
+.tarjetaContact{
+  
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.603);
+    background-clip: border-box;
+    
+    border-radius: 0.25rem;
+    margin: 1rem;
+    box-shadow: 1px 10px 15px rgb(0 0 0 / 10%) !important;
+    padding-bottom: 0px;
+
+}
+.tarjetaContact p{
+  font-size: 12px; 
+ line-height: 20px;
+}
+.tarjetaContact button{
+  font-size: 1rem; 
+ line-height: 20px;
+}
+.tarjetaContact .tarjetaTitulo{
+  font-size: 20px
+}
+.tarjetaTitulo{
+  color: #0a58ca;
+  font-size: 25px;
+  font-weight: inherit;
+}
+p{
+  color: dimgray;
+    font-size: 1.5rem;
+    line-height: 35px;
+    font-weight: normal;
+}
     
     </style>
 
@@ -169,9 +395,10 @@ color: #0a58ca;
   </head>
   <body>
     
-<header class="site-header cristal sticky-top py-1">
-    
-  <nav class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+<!--<header class="site-header cristal sticky-top py-1">-->
+  <header class="encabezadoSitio cristal">
+  <nav class=" d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <section class="logo col-12 col-sm-3 d-flex justify-content-center">
     <a class="py-2" href="#" aria-label="Product">
 
        <img src="./Logo.fw.png" height="44" alt="logo Vacuna" class="logoMenu">
@@ -179,33 +406,38 @@ color: #0a58ca;
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
         -->
     </a> 
-    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Database</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">EDucation</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none" href="#">News</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Regulation</a>
-    <a class="py-2 d-none d-md-inline-block text-decoration-none " href="#">Support</a>
+  </section>
+  <section class="menu col-12 col-sm-7 d-flex justify-content-between">
+    <a class="py-2 d-none d-md-inline-block text-decoration-none underlineHover" href="#">Database</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none underlineHover" href="#">Education</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none underlineHover" href="#">News</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none underlineHover" href="#">Regulation</a>
+    <a class="py-2 d-none d-md-inline-block text-decoration-none underlineHover" href="#">Support</a>
     <a type="button" class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold py-2 d-none d-md-inline-block btnHoax ">Hoax Buster</a>
+  </section>
   </nav>
 </header>
 
 <main>
-  <div class="position-relative  p-3 m-md-2 text-center">
+  <div class="Seccion1">
          
     <div class="bg">
         <div class="bg-cover-image" style="background-image: url('./background.jpg');" ></div>
        
       </div>
     <div class="col-md-5 p-lg-5 mx-auto my-5 section1">
-      <h1 class="display-5 fw-bold titulo1">Fight Virus With Vaccines</h1>
+      <h1 class="titulos" style="font-size: 3.5rem;">Fight Virus With Vaccines</h1>
       <br>
-      <p class=" fw-normal">Let´s stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
-      <br>
+      <p >Let´s stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+      <br><br>
       <p class="row fw-normal lead"> <span class="col-12 col-md-6"><i class="fa-solid fa-shield iconoAmarillo"></i> Best protection</span> <span class="col-12 col-md-6" ><i class="fa-solid fa-star iconoAmarillo"></i> Selected Vaccines</span></p>
-   <br><br><br>
-      <br>
+
+
+<section class="scheduleVacuna">
       <h5 class=""> <i class="fa-solid fa-clock iconoSchedule"></i> Schedule yout vaccinations</h5>
+      <br><br>
       <div class="Schedule d-flex align-items-stretch p-3 rounded-3 shadow-lg cristal"  id="">
-        <nav class="d-flex flex-wrap">
+        <section class="d-flex flex-wrap">
             <div class="col d-flex align-items-center">
                 <img class="bi text-muted flex-shrink-0 me-3" width="25px" height="25px" src="./dist/img/location-pin-solid.svg" alt="">
                 
@@ -245,15 +477,17 @@ color: #0a58ca;
 
   
             
-        </nav>
+            </section>
       
       </div>
+    </section>
     </div>
     <img class="primerImagen shadow-sm d-none d-md-block" src="./vacuna1.jpg"></img>
     
   </div>
+
 <br>
-<section id="vacunas">
+<section id="Seccion1">
   <div class=" text-center my-3">  
     <div class=" container row mx-auto my-auto justify-content-center">
         <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -313,75 +547,244 @@ color: #0a58ca;
 </div>
 </section>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" >
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Why should I vaccine?</h2>
-        <p class="lead">Inorder to avoid any doubts about getting the COVID-19 vaccine, identify the followin 4 benefit of COVID-20 vaccination :</p>
+  <div class="col-md-5 p-lg-5 mx-auto my-5 section2 container" >
+    
+      <div class=" ">
+        <h2 class="titulos">Why should I vaccine?</h2>
+        <p >In order to avoid any doubts about getting the COVID-19 vaccine, identify the followin 4 benefit of COVID-20 vaccination :</p>
       </div>
       
+    
+  </div>
+  <div class="d-flex flex-wrap  espacioTarjetas " >
+    <div class="tarjetaBenefits col-6 col-md-3">
+      <div class="card-imagen">
+      <i class="fa-solid fa-bars-progress"></i>
+      <!--<img src="..." class="imagenTajetaTop" alt="...">-->
     </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="card-body">
+        <h5 class="tarjetaTitulo">Minimize the spread of viruses</h5>
+        <br>
+        <p class="card-text">Vaccine has been proven effective to prevent someone from getting ingfcted with Coronavirus</p>
+        <br><br>
+      </div>
+    </div>
+    <div class="tarjetaBenefits col-6 col-md-3">
+      <div class="card-imagen">
+        <i class="fa-solid fa-shield-virus"></i>
+      <!--<img src="..." class="imagenTajetaTop" alt="...">-->
+    </div>
+      <div class="card-body">
+        <h5 class="tarjetaTitulo">Forming <br>antibodies</h5>
+        <br>
+        <p class="card-text">Covid-19 vaccine proven to help shape antibody response for immune system</p>
+        <br><br>
+      </div>
+    </div>
+    <div class="tarjetaBenefits col-6 col-md-3">
+      <div class="card-imagen">
+        <i class="fa-solid fa-users"></i>
+      <!--<img src="..." class="imagenTajetaTop" alt="...">-->
+    </div>
+      <div class="card-body">
+        <h5 class="tarjetaTitulo">Protecting people nearby</h5>
+        <br>
+        <p class="card-text">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+        <br><br>
+      </div>
+    </div>
+    <div class="tarjetaBenefits col-6 col-md-3">
+      <div class="card-imagen">
+        <i class="fa-solid fa-chart-line"></i>
+      <!--<img src="..." class="imagenTajetaTop" alt="...">-->
+    </div>
+      <div class="card-body">
+        <h5 class="tarjetaTitulo">Creating group immunity</h5>
+        <br>
+        <p class="card-text">COVID-19 vaccination is also beneficial for creaing group immunity or hed immunity</p>
+        <br><br>
+      </div>
+    </div>
+    </div>
+
+
+  <div class="row Seccion3" >
+    <div class="col12 col-md-6 d-flex justify-content-center overflow-hidden d-none d-md-flex">
+      <img src="./dist/img/imagen2.png" alt="" style="height: fit-content;">
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center text-right flex-wrap">
+      
+      <h2 class="titulos"> Preparations Before Vaccine</h2>
+      <p class="textoMediano col-9">
+        The success of vaccines is strongly influenced by the strengh of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:
+      </p>
+      <section class="acordiones">
+      <div class="accordion cristal" id="acordion1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <i class="fa-solid fa-triangle-exclamation"></i> Avoid alcoholic beverages
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse cristal " aria-labelledby="headingOne" data-bs-parent="#acordion1">
+            <div class="accordion-body">
+              <p class="textoChico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ab totam deleniti optio pariatur architecto repudiandae itaque cupiditate officiis aliquam dicta soluta amet. Facilis modi repellat molestias illum magni tenetur.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <i class="fa-solid fa-circle-exclamation"></i>Avoid stress
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#acordion1">
+            <div class="accordion-body">
+              <p class="textoChico">Stress has a profound eggect on immune work. <br>
+                moreover, prolonged stress can increase cortisol production and oxidative stress in the body.
+                </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="accordion" id="acordion2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fas fa-utensils"></i>Eat healthy food
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#acordion2">
+            <div class="accordion-body">
+              <p class="textoChico">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo delectus modi ratione ea ullam deserunt aliquam quisquam exercitationem quasi. Eaque velit itaque cupiditate aliquam vitae eveniet natus id ea quas!
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <i class="fas fa-bed"></i>Get enough sleep
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#acordion2">
+            <div class="accordion-body">
+              <p class="textoChico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam harum quo et, minus soluta nam enim architecto totam sint. Pariatur totam id perspiciatis, iure aspernatur quas eligendi in quis?
+                </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              <i class="fas fa-dumbbell"></i>Exercise or physical activiry
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#acordion2">
+            <div class="accordion-body">
+              <p class="textoChico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam harum quo et, minus soluta nam enim architecto totam sint. Pariatur totam id perspiciatis, iure aspernatur quas eligendi in quis?
+                </p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    </div>
+  </div>
+
+  
+
+
+  <div class="row seccion4" >
+    <div class="col-12 col-md-6 d-flex justify-content-center text-right flex-wrap">
+  
+      <h2 class="titulos">Emergency contact</h2>
+      <p class="textoMediano col-9">
+        Contact one og the contacts below if your family fell unwell and have similar symtomp such as Covid-19, make sure you also taje care of yourself before reporting to us:
+      </p>
+      <div class="d-flex flex-wrap flex-grow-1 container">
+        <div class="tarjetaContact col-12 col-lg-5">
+          <div class="card-imagen d-flex">
+            <i class="fa-solid fa-users"></i> 
+            <section class="seccion3Tarjetas">
+            <h5 class="tarjetaTitulo">Call</h5>
+            <p>021.123.145.14</p>
+          </section>
+        </div>
+          <div class="card-body seccion3TarjetasBtn">
+            <button class="btn btn-primary btn-lg btnTarjetas ">Call Now</button>
+          </div>
+        </div>
+        <div class="tarjetaContact col-12 col-lg-5">
+          <div class="card-imagen d-flex">
+            <i class="fa-solid fa-comment-dots"></i>
+            <section class="seccion3Tarjetas">
+            <h5 class="tarjetaTitulo">Chat</h5>
+            <p>021.123.145.14</p>
+          </section>
+          <!--<img src="..." class="imagenTajetaTop" alt="...">-->
+        </div>
+          <div class="card-body seccion3TarjetasBtn">
+         
+            <button class="btn btn-primary btn-lg btnTarjetas active">Chat Now</button>
+            
+          </div>
+        </div>
+        <div class="tarjetaContact col-12 col-lg-5">
+          <div class="card-imagen d-flex">
+            <i class="fa-solid fa-users"></i> 
+            <section class="seccion3Tarjetas">
+
+            
+            <h5 class="tarjetaTitulo">Video Call</h5>
+            <p>021.123.145.14</p>
+          </section>
+          <!--<img src="..." class="imagenTajetaTop" alt="...">-->
+        </div>
+          <div class="card-body seccion3TarjetasBtn">
+         
+            <button class="btn btn-primary btn-lg btnTarjetas ">Video Call Now</button>
+            
+          </div>
+        </div>
+        <div class="tarjetaContact col-12 col-lg-5">
+          <div class="card-imagen d-flex">
+            <i class="fa-solid fa-users"></i> 
+            <section class="seccion3Tarjetas">
+
+            
+            <h5 class="tarjetaTitulo">Message</h5>
+            <p>021.123.145.14</p>
+          </section>
+          <!--<img src="..." class="imagenTajetaTop" alt="...">-->
+        </div>
+          <div class="card-body seccion3TarjetasBtn">
+         
+            <button class="btn btn-primary btn-lg btnTarjetas ">Message Now</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col12 col-md-6 d-flex justify-content-center overflow-hidden d-none d-md-flex">
+      <img src="./dist/img/imagen3.png" style="height:fit-content" alt="">
+    </div>
+    
       
     </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
 </main>
 
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md-6">
-      <h3 class=" fw-bold titulo1">Vaccination</h3>
+      <h3 class="titulos">Vaccination</h3>
       <br>
       <small class="d-block mb-3 text-muted col-md-6 col-12">Our goal is to help the world free from the ongoing pandemic.</small>
     </div>
@@ -411,18 +814,14 @@ color: #0a58ca;
         
       </ul>
     </div>
+    <span class="pie" style="bottom:0px">
     <div class="col-6">
       <p>Vacinnation. All right reserverd</p>
     </div>
     <div class="col-6">
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary text-decoration-none" href="#">FAQs</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">Support Center</a></li>
-        <li><a class="link-secondary text-decoration-none" href="#">Contact Us</a></li>
-        
-      </ul>
+      
     </div>
-    
+  </span>
   </div>
 </footer>
 
@@ -448,7 +847,12 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
-
+//Recarga temporal para muestra del diseño 
+/*
+setTimeout(function(){
+    window.location.reload();
+  },3000);
+  */
 </script>
 </html>
 
